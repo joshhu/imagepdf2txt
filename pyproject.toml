@@ -1,0 +1,21 @@
+[project]
+name = "pdfocr"
+version = "0.1.0"
+description = "使用 PaddleOCR 將 PDF 轉換成 TXT 文字檔"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "paddlepaddle-gpu>=3.2.0",
+    "paddleocr @ git+https://github.com/PaddlePaddle/PaddleOCR.git",
+    "pdf2image",
+]
+
+[tool.uv]
+index-strategy = "unsafe-best-match"
+
+[[tool.uv.index]]
+name = "paddle"
+url = "https://www.paddlepaddle.org.cn/packages/stable/cu126/"
+
+[project.scripts]
+pdfocr = "main:main"
