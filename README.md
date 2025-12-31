@@ -35,7 +35,7 @@ brew install poppler
 
 ```bash
 # 複製專案
-git clone https://github.com/YOUR_USERNAME/imagepdf2txt.git
+git clone https://github.com/joshhu/imagepdf2txt.git
 cd imagepdf2txt
 
 # 建立虛擬環境
